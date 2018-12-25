@@ -1,0 +1,255 @@
+<!DOCTYPE html> 	<!-- Tells the browser this is HTML 5 -->
+<html lang="en"> 	<!-- Root of the html document and is in English -->
+<head> 
+	<!-- META tags help search engines identify your content more easily -->
+	<meta charset="utf-8" /> <!-- Specifies the character encoding for the HTML document -->
+	<meta name="author" content="Jessica Li">
+	<meta name="description" content="Prantl's Bakery">
+	<link href="https://fonts.googleapis.com/css?family=Cookie|Raleway|Great+Vibes|Poiret+One|Sacramento|Satisfy" rel="stylesheet">
+
+	<!-- The title will appear in the menu bar of the browser -->
+	<title>Prantl's Bakery</title>
+	
+	<!-- CSS External Links -->
+	<link rel="stylesheet" media="all" type="text/css" href="css/jquery-ui.css" />
+	<link rel="stylesheet" media="all" type="text/css" href="css/jquery.lightbox.css" />
+	<link rel="stylesheet" media="all" type="text/css" href="css/bootstrap.css" />
+    <link rel="stylesheet" media="all" type="text/css" href="css/styles.css" />
+    
+	<!-- JS External Links -->
+    <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="js/jquery-ui.js"></script>
+    <script type="text/javascript" src="js/jquery-lightbox.js"></script>
+    <script src="https://code.highcharts.com/highcharts.js"></script>
+	<script src="https://code.highcharts.com/modules/exporting.js"></script>
+	<script type="text/javascript" src="js/scripts.js"></script>
+
+	<script type="text/javascript">
+		$(function() {
+			$('#popshadyside').highcharts({
+		    chart: {
+		        type: 'column'
+		    },
+		    title: {
+		        text: 'Popular Times (Shadyside)'
+		    },
+		    xAxis: {
+		        categories: ['7 AM', '8 AM','9 AM','10 AM','11 AM','12 PM','1 PM','2 PM', '3 PM', '4 PM', '5 PM'],
+		        crosshair: true,
+		         title: {
+		            text: 'Hour'
+		        }
+		    },
+		    yAxis: {
+		        min: 0,
+		        title: {
+		            text: 'People (Average)'
+		        }
+		    },
+
+		    series: [{
+		        name: 'People',
+		        data:[10, 8,24,5,7,32,16,18,27,39,32]
+		    }
+		]  })
+		});
+	</script>
+
+	<script type="text/javascript">
+		$(function() {
+			$('#popdowntown').highcharts({
+	    chart: {
+	        type: 'column'
+	    },
+	    title: {
+	        text: 'Popular Times (Downtown)'
+	    },
+	    xAxis: {
+	        categories: ['7 AM', '8 AM','9 AM','10 AM','11 AM','12 PM','1 PM','2 PM', '3 PM', '4 PM', '5 PM'],
+	        crosshair: true,
+	         title: {
+	            text: 'Hour'
+	        }
+	    },
+	    yAxis: {
+	        min: 0,
+	        title: {
+	            text: 'People (Average)'
+	        }
+	    },
+
+	    series: [{
+	        name: 'People',
+	        data:[24, 12,16,8,11,19,15,18,13,21,35]
+	    }
+	] })
+	});
+	</script>
+
+</head>
+    
+<body>
+<!-- The CONTAINER is where the main content goes -->
+<div id="container">
+  
+<!-- HEADER + NAVIGATION BAR (LOGO + BAR ON ONE LINE ) ################################################ -->
+  <div id="top_row">
+  <header id="head_all"> 
+  	<div class = "col-lg-3">
+  		<a href="index.html"> 
+  			<h1>Prantl's Bakery</h1>
+  			<!-- <img src="images/top_logo.png"> -->
+  		</a>
+  	</div>
+	<div class = "col-lg-9">
+		<nav class="navbar" >
+	    	<ul class=" nav page_titles">
+		        <li><a href="contact.html">Contact</a></li>
+		        <li><a href="order.html">Order</a></li>
+		        <li><a href="celebrations.html">Celebrations</a></li>
+		        <li><a href="index.html">Home</a></li>
+	  		</ul>
+		</nav>
+  	</div>
+    
+  </header>
+  </div>
+
+<!-- CONTACT LOCATION ########################################################################################### -->
+ <div id= "loc_items"> 
+ <div class = "row">
+ 	<div class = "col-lg-2 col-xs-6">
+ 			<h1>Shadyside</h1>
+ 			<p>
+ 				Shadyside <br/>
+				5525 Walnut Street <br/>
+				Phone number: 412-621-2092 <br/>
+				<a href="mailto:jquesenberry@cmu.edu" target="_blank">Email: info@prantlsbakery.com</a><br/>
+			</p>		
+ 	</div>
+ 	<div class = "col-lg-4 col-xs-6">
+ 		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3036.069695157283!2d-79.93505158460302!3d40.451594379361126!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8834f211aed70341%3A0x10db72884d553d04!2sPrantl&#39;s+Bakery!5e0!3m2!1sen!2sus!4v1522552787308" width="300" height="225" frameborder="0" style="border:0" allowfullscreen></iframe>
+ 	</div>
+ 	<div class = "col-lg-2 col-xs-6">
+ 			<h1>Downtown</h1>
+ 			<p>
+ 				Downtown <br/>
+				438 Market Street <br/>
+				Pittsburgh, PA 15222<br/>
+				General Information: 412-471-6861<br/>
+				<a href="mailto:jquesenberry@cmu.edu" target="_blank">Email: info@prantlsbakery.com</a><br/>
+ 			</p>
+ 			
+ 		</div>
+ 	<div class = "col-lg-4 col-xs-6">
+ 		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d24290.436976504716!2d-79.98498127451457!3d40.44639428849216!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8834f15696baf219%3A0x9e8bccef10009784!2sPrantl&#39;s+Bakery!5e0!3m2!1sen!2sus!4v1522552844707" width="300" height="225" frameborder="0" style="border:0" allowfullscreen></iframe>
+ 	</div>
+
+ </div>
+  <!-- Hours-->
+ <div class = "row">
+ 	<div class = "col-lg-6 col-xs-6">
+ 		<table>
+			<tr></tr>
+			<tr>
+				<th>Hours:</th>
+			</tr>
+			<tr>
+				<td>Monday:  </td>
+				<td> 9am-4pm </td>
+			</tr>
+			<tr>
+				<td>Tuesday-Saturday:  </td>
+				<td> 7:30am-6pm</td>
+			</tr>
+			<tr>
+				<td>Sunday:  </td>
+				<td> 9am-4pm</td>
+			</tr>
+		</table>
+ 	</div>
+ 	<div class = "col-lg-6 col-xs-6">
+ 		<table>
+			<tr>
+				<th>Hours:  </th>
+			</tr>
+			<tr>
+				<td>Monday-Friday:  </td>
+				<td> 7am-6pm </td>
+			</tr>
+			<tr>
+				<td>Saturday:  </td>
+				<td> 9am-4pm</td>
+			</tr>
+			<tr>
+				<td>Sunday:  </td>
+				<td> 10am-3pm</td>
+			</tr>
+		</table>
+ 	</div>
+ </div>
+<br/>
+<!--Busiest Hours-->
+ <div class = "row">
+ 		<div class = "col-lg-6 col-xs-12">
+ 			<div id="popshadyside" style="width: 500px; height: 400px; margin: 0 auto"></div>
+ 		</div>
+ 		 <div class = "col-lg-6 col-xs-12">
+ 			<<div id="popdowntown" style="width: 500px; height: 400px; margin: 0 auto"></div>
+ 		</div>
+ </div>
+ </div>
+
+
+<!-- CONTACT INQUIRIES ########################################################################################### -->
+
+<form action="mailto:infoneeded@prantlsbakery.com" method="post" enctype="text/plain" onsubmit = "return validate()">
+	  <fieldset>
+		  <legend> Customer Inquiry</legend>
+		  <label for="uname">Full Name (*required):</label> <br/>
+		  <input type="text" id="uname" name="uname" value="" placeholder = "John Doe" size="20" maxlength ="250" required><br/><br/>
+
+		  <label for="uname">Zip Code:</label> <br/>
+		  <input type="text" id="zipcode" name="zipcode" value="" size="20" placeholder = "44444" maxlength ="5"><br/><br/>
+
+		  <label for="email">Please provide your email address (*required):</label><br/>
+		  <input type="email" id="email" name="email" value="" Placeholder = "abc@defg.com" required ><br/><br/>
+
+		  <label for="uname">Inquiry:</label> <br/>
+		  <textarea rows="4" cols="50" name="inquiry" form="usrform"></textarea><br/><br/>
+		  
+		  <label>Please indicate if you want to receive updates via email:</label><br/>
+		  <input type="checkbox" id="signup" name="signup" value="yes">Yes, please update me!<br/><br/>
+  		  
+  		  <input type ="image" src="images/submit.png" width = "200" alt="Submit" name= "btnimage" value ="Submit">
+	  </fieldset>
+</form>
+<br/><br/>
+
+  	
+<!-- FOOTER  ##################################################################################################### -->
+	<footer>
+		<hr/>
+		<p>Prantl's Bakery © 2018</p>
+		<div class = "icon_row"> 
+		    <a href="https://www.facebook.com/PrantlsBakery/" class = "icons" target="_blank">
+		    	<img src="images/icons/fb_icon.png">
+		    </a>
+		    <a href="https://www.instagram.com/prantls_bakery/" class = "icons" target="_blank">
+		    	<img src="images/icons/insta_icon.png">
+		    </a>
+		    <a href="https://twitter.com/prantlsbakery" class = "icons" target="_blank">
+		    	<img src="images/icons/tw_icon.png">
+		    </a>
+		    <a href="https://www.yelp.com/biz/prantls-bakery-pittsburgh" class = "icons" target="_blank">
+		    	<img src="images/icons/yelp_icon.png">
+		    </a>
+	    </div>
+	</footer>
+
+
+</div>	<!-- container ending -->
+</div> <!-- entire page ending -->
+</body>
+
+</html>

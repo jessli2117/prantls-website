@@ -1,0 +1,226 @@
+/* CSS Document */
+/* Slash-Star begins a comment, and then Star-Slash ends a comment */
+
+body {
+	font-family: 'Cookie', cursive;
+	font-family: 'Raleway', sans-serif;
+	font-size: 100%; /* Generally set the font-size to 100% in the body - you can then change with em in the other areas */
+	line-height: 1.5em; /* The line-height property in CSS controls the space between lines of text. It is often set in a unitless value (e.g. line-height: 1.4; ) */
+	color: #000000;
+}
+
+header, h1 {
+	font-family: 'Cookie', cursive;
+}
+
+h2,h3, p {
+	color: black;
+	font-family: 'Raleway', sans-serif;
+}
+
+a {	
+	color: #0F4970;
+	text-decoration: none;
+}
+
+a:hover {	
+	color: #0F4970;
+	text-decoration: underline;
+}
+
+/*ALL PAGES---------------------------------------------------------------------------------------------*/
+/* The container ID will hold our full webpage together */
+#whole_page {
+	width: 100%;
+	margin: 10px auto; /* Sets 10px to the top and the the browser will center with auto */
+	/* border: 1px solid gray; */
+}
+
+/* The top row - spans all columns for header and nav */
+#top_row {
+	border-bottom: 1px solid #ccc;
+	margin-bottom: 1.5em;
+	padding: 0em 1em 3em 0.5em; /* http://www.digizol.com/2006/12/margin-vs-padding-css-properties.html */ 
+	/* top, right, bottom, left */
+}
+
+/*font-family: 'Poiret One', cursive;
+font-family: 'Great Vibes', cursive;
+font-family: 'Satisfy', cursive;
+font-family: 'Sacramento', cursive;*/
+
+#top_row #head_all h1 {
+	font-family: 'Satisfy', cursive; 
+	color: #ffbb99;
+	font-size: 40px;
+	margin-bottom: 0em;
+}
+
+#top_row img {
+	float: left;
+	width: 100%;
+	height: 70%;
+}
+
+#top_row ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    top: 0;
+    width: 100%;
+}
+
+#top_row li {
+    float: right;
+}
+
+#top_row li a {
+    display: block;
+    color: black;
+    text-align: center;
+    font-size: 24px;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+#top_row li a:hover:not(.active) {
+    background-color: lightgray;
+}
+
+.active {
+    background-color: lightgray;
+}
+
+
+footer {
+	clear: both; /* The clear property specifies which side(s) of an element other floating elements are not allowed. */
+	margin: 0;
+	padding: .5em;
+	color: black;
+	font-variant: small-caps; 
+	font-size: .813em;
+	text-align: center;
+	border-top: 1px dotted #cccccc;
+	/* background-color: #ddd; */
+}
+
+.icons{
+    display:inline-block;
+    width: 64px; 
+    height: 64px; 
+   }
+
+/*INDEX PAGE---------------------------------------------------------------------------------------------*/
+
+div.scrollmenu {
+    background-color: white;
+    overflow: auto;
+    white-space: nowrap;
+}
+
+div.scrollmenu a {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px;
+    text-decoration: none;
+}
+
+iframe {
+	float: center;
+}
+
+/*CELEBRATIONS PAGE--------------------------------------------------------------------------------------*/
+
+#tabs h1 {
+	font-size: 42px; 
+	text-align: center;
+}
+
+#tabs h4 {
+	font-family: 'Poiret One', cursive;
+	font-style: italic;
+	text-align: center;
+}
+
+#tabs table {
+	width: 100%;
+	border: 0;
+	border-color: white;
+}
+
+#tabs th {
+	font-family: 'Cookie', cursive;
+	font-size: 24px;
+}
+
+
+/*ORDER PAGE---------------------------------------------------------------------------------------------*/
+
+
+
+/*CONTACT PAGE-------------------------------------------------------------------------------------------*/
+
+#loc_items {
+	margin-left: 20px; 
+}
+
+#loc_items td {
+	width: 60%;
+}
+
+
+#loc_items th {
+	text-align:left; 
+}
+
+
+#loc_items table {
+	padding-left: 5px; 
+}
+
+
+
+/* Form Styling */
+form {
+	width: 90%;
+	margin: auto;
+	padding: 1px;	
+}
+
+legend {
+	font-weight: bold;
+	text-align: center;
+	color: #666666;
+	margin-bottom: 5px;
+}
+
+label {
+	font-weight: bold;
+	text-align: center;
+}
+iframe {
+	display:block;
+	margin:auto;
+}
+
+html { overflow-y: scroll; }
+/* http://www.w3schools.com/cssref/css3_pr_overflow-y.asp */
+
+
+/* 
+Body is a called a selector - these declarations will be applied to everything in this selector.
+
+The color can be specified by: Color name, RGB value, Hex value.
+
+The font family of a text is set with the font-family property (should hold several font names as a "fallback" system). 
+If the browser does not support the first font, it tries the next font. 
+
+Font size can be absolute or relative.
+To allow users to resize the text (in the browser menu), many developers use em instead of pixels.
+The em size unit is recommended by the W3C.
+1em is equal to the current font size. The default text size in browsers is 16px. So, the default size of 1em is 16px.
+The size can be calculated from pixels to em using this formula: pixels/16=em.
+http://www.w3schools.com/css/css_font.asp
+*/

@@ -1,0 +1,132 @@
+<!DOCTYPE html> 	<!-- Tells the browser this is HTML 5 -->
+<html lang="en"> 	<!-- Root of the html document and is in English -->
+<head> 
+	<!-- META tags help search engines identify your content more easily -->
+	<meta charset="utf-8" /> <!-- Specifies the character encoding for the HTML document -->
+	<meta name="author" content="Jessica Li">
+	<meta name="description" content="Prantl's Bakery">
+	<link href="https://fonts.googleapis.com/css?family=Cookie|Raleway|Great+Vibes|Poiret+One|Sacramento|Satisfy" rel="stylesheet">
+
+	<!-- The title will appear in the menu bar of the browser -->
+	<title>Prantl's Bakery</title>
+	
+	<!-- CSS External Links -->
+	<link rel="stylesheet" media="all" type="text/css" href="css/jquery-ui.css" />
+	<link rel="stylesheet" media="all" type="text/css" href="css/jquery.lightbox.css" />
+	<link rel="stylesheet" media="all" type="text/css" href="css/bootstrap.css" />
+    <link rel="stylesheet" media="all" type="text/css" href="css/styles.css" />
+    
+	<!-- JS External Links -->
+    <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="js/jquery-ui.js"></script>
+    <script type="text/javascript" src="js/jquery-lightbox.js"></script>
+	<script type="text/javascript" src="js/scripts.js"></script>
+
+<script>
+		$(function() {
+			$("#tabs").tabs({
+				event: "mouseover"
+			});
+		});
+</script>
+
+</head>
+    
+<body>
+<!-- The CONTAINER is where the main content goes -->
+<div id="container">
+  
+<!-- HEADER + NAVIGATION BAR (LOGO + BAR ON ONE LINE ) ################################################ -->
+  <div id="top_row">
+  <header id="head_all"> 
+  	<div class = "col-lg-3">
+  		<a href="index.html"> 
+  			<h1>Prantl's Bakery</h1>
+  			<!-- <img src="images/top_logo.png"> -->
+  		</a>
+  	</div>
+	<div class = "col-lg-9">
+		<nav class="navbar" >
+	    	<ul class=" nav page_titles">
+		        <li><a href="contact.html">Contact</a></li>
+		        <li><a href="order.html">Order</a></li>
+		        <li><a href="celebrations.html">Celebrations</a></li>
+		        <li><a href="index.html">Home</a></li>
+	  		</ul>
+		</nav>
+  	</div>
+    
+  </header>
+  </div>
+
+  <!-- ABOUT US ITEMS (SLIDESHOW; VIDEO + DESCRIPTION) ####################################################### -->
+  <div id = "content">
+  <!-- Slides-->
+	  <div class = "row">
+			<div class="scrollmenu">
+	  			<a href="images/index/gallery/img1.jpg">
+	  				<img src="images/index/gallery/img1.jpg" width="400" height="300">
+	  			</a>
+	  			<a href="images/index/gallery/img2.jpg">
+	  				<img src="images/index/gallery/img2.jpg" width="350" height="300">
+	  			</a>
+	  			<a href="images/index/gallery/img3.jpg">
+	  				<img src="images/index/gallery/img3.jpg" width="300" height="300">
+	  			</a>
+	  			<a href="images/index/gallery/img4.jpg">
+	  				<img src="images/index/gallery/img4.jpg" width="300" height="300">
+	  			</a>
+	  			<a href="images/index/gallery/img5.jpg">
+	  				<img src="images/index/gallery/img5.jpg" width="500" height="300">
+	  			</a>
+	</div>
+	</br>
+	<!-- Create the video on left and description on right -->
+	<div class = row>
+		<!-- Video-->
+		<div class = "col-lg-6 col-xs-12">
+		    <iframe width="600" height="300" src="https://www.youtube.com/embed/iLhlZciMfoQ" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+		    <img src="images/logo.png" width ="200" height ="150">
+		</div>
+		<!-- Description-->
+		<div class = "col-lg-6 col-xs-12">
+			<h1>About Us</h1>
+			<a target = "_blank" href="http://www.huffingtonpost.com/2014/04/14/prantls-torte-cake-almond_n_5133580.html">
+				<h1> ★★★★★</h1>
+				<h4> “No cake made in any of the five boroughs of New York holds a candle to Prantl’s amazing burnt almond torte. It is possibly the BEST cake America has to offer.” </h4>
+			</a>
+			<p>
+				Prantl’s Bakery is a Pittsburgh institution. Its “Burnt Almond Torte” and 100+ sinful sweets have been a tradition for the last 40 years. In fact, there’s been a bakery in continuous operation at the flagship Shadyside store for over 100 years. Prantl’s is a bakery in the German tradition, with old-fashioned fruit Danish and nut-filled coffeecakes, but we can’t help but get excited about some of our “new favorites” as well, like key lime pie and our buttery croissants. In addition to our mouth watering special order cakes, we are famous for our “Burnt Almond Torte”, which was conceived by Henry Prantl after a trip to California. There was an almond glut the year he went and the Almond Board was trying to get bakers to use almonds in new and inspiring ways. Henry picked up a few ideas and brought them back to Pittsburgh where he refined them into our current recipe for “Burnt Almond Torte”, a unique and addictive dessert.
+
+				Henry and Jane Prantl retired from the business in 2007. The bakery is now owned and operated by John M. Felice, who strives to maintain the tradition of high quality baked goods.
+			</p>
+		</div>
+	</div>
+  </div>
+  	
+<!-- FOOTER  ##################################################################################################### -->
+	<footer>
+		<hr/>
+		<p>Prantl's Bakery © 2018</p>
+		<div class = "icon_row"> 
+		    <a href="https://www.facebook.com/PrantlsBakery/" class = "icons" target="_blank">
+		    	<img src="images/icons/fb_icon.png">
+		    </a>
+		    <a href="https://www.instagram.com/prantls_bakery/" class = "icons" target="_blank">
+		    	<img src="images/icons/insta_icon.png">
+		    </a>
+		    <a href="https://twitter.com/prantlsbakery?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" class = "icons" target="_blank">
+		    	<img src="images/icons/tw_icon.png">
+		    </a>
+		    <a href="https://www.yelp.com/biz/prantls-bakery-pittsburgh" class = "icons" target="_blank">
+		    	<img src="images/icons/yelp_icon.png">
+		    </a>
+	    </div>
+	</footer>
+
+
+</div>	<!-- container ending -->
+</div> <!-- entire page ending -->
+</body>
+
+</html>

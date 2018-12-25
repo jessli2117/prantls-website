@@ -1,0 +1,144 @@
+<!DOCTYPE html> 	<!-- Tells the browser this is HTML 5 -->
+<html lang="en"> 	<!-- Root of the html document and is in English -->
+<head> 
+	<!-- META tags help search engines identify your content more easily -->
+	<meta charset="utf-8" /> <!-- Specifies the character encoding for the HTML document -->
+	<meta name="author" content="Jessica Li">
+	<meta name="description" content="Prantl's Bakery">
+	<link href="https://fonts.googleapis.com/css?family=Cookie|Raleway|Great+Vibes|Poiret+One|Sacramento|Satisfy" rel="stylesheet">
+
+	<!-- The title will appear in the menu bar of the browser -->
+	<title>Prantl's Bakery</title>
+	
+	<!-- CSS External Links -->
+	<link rel="stylesheet" media="all" type="text/css" href="css/jquery-ui.css" />
+	<link rel="stylesheet" media="all" type="text/css" href="css/jquery.lightbox.css" />
+	<link rel="stylesheet" media="all" type="text/css" href="css/bootstrap.css" />
+    <link rel="stylesheet" media="all" type="text/css" href="css/styles.css" />
+    
+	<!-- JS External Links -->
+    <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="js/jquery-ui.js"></script>
+    <script type="text/javascript" src="js/jquery-lightbox.js"></script>
+	<script type="text/javascript" src="js/scripts.js"></script>
+
+	<style>
+	form {
+		width: 100%;
+		margin: 10px;
+		padding: 1px;	
+		}
+	</style>
+
+</head>
+    
+<body>
+<!-- The CONTAINER is where the main content goes -->
+<div id="container">
+  
+<!-- HEADER + NAVIGATION BAR (LOGO + BAR ON ONE LINE ) ################################################ -->
+  <div id="top_row">
+  <header id="head_all"> 
+  	<div class = "col-lg-3">
+  		<a href="index.html"> 
+  			<h1>Prantl's Bakery</h1>
+  			<!-- <img src="images/top_logo.png"> -->
+  		</a>
+  	</div>
+	<div class = "col-lg-9">
+		<nav class="topnav" >
+	    	<ul class=" nav page_titles">
+		        <li><a href="contact.html">Contact</a></li>
+		        <li><a href="order.html">Order</a></li>
+		        <li><a href="celebrations.html">Celebrations</a></li>
+		        <li><a href="index.html">Home</a></li>
+	  		</ul>
+		</nav>
+  	</div>
+    
+  </header>
+  </div>
+
+ <div class = "row">
+ <div class = "col-lg-7 col-xs-12">
+ <form action="mailto:infoneeded@prantlsbakery.com" method="post" enctype="text/plain" onsubmit = "return validate()">
+	  <fieldset>
+		  <legend> Order Almond Torte (8x3)</legend>
+		  <label for="uname">Full Name:</label> <br/>
+		  <input type="text" id="uname" name="uname" value="" placeholder = "John Doe" size="20" maxlength ="250"><br/><br/>
+
+		  <label for="address">Billing Address:</label> <br/>
+		  <textarea rows="10" cols="50" name="billingaddress" form="usrform"></textarea><br/><br/>
+
+		  <label for="email">Email address:</label><br/>
+		  <input type="email" id="email" name="email" value="" Placeholder = "abc@defg.com"><br/><br/>
+
+		  <label for= "phone">Phone number:</label><br/>
+		  <input type="text" id="phone" name="phone" Placeholder="1234567890" required> <br/><br/>
+
+		  <label for="quantity">Quatity of cakes:</label>
+		  <select name="quantity">
+			  <option value="1" selected>1</option>
+			  <option value="2">2</option>
+			  <option value="3">3</option>
+			  <option value="4">4</option>
+			  <option value="1">5</option>
+			  <option value="2">6</option>
+			  <option value="3">7</option>
+			  <option value="1">8</option>
+			  <option value="4">9</option>
+			  <option value="10">10</option><br/>
+		  </select><br/><br/>
+
+		  <label for="source">Pickup Location:</label>
+		  <select name="location">
+			  <option value="shadyside" selected>Shadyside</option>
+			  <option value="downtown">Downtown</option>
+		  </select><br/><br/>
+
+		  <label for="date">Pickup Date:</label> <br/>
+		  <input type="date" id="txtDate" name="txtDate" value="" size="/20" maxlength ="250"><br/><br/>
+
+		  <label for="txttime">Pickup Time:</label> <br/>
+		  <input type="time" id="pickuptime" name="pickuptime" value="" size="20" maxlength ="250"><br/><br/><br/>
+  		  
+  		  <input type ="image" src="images/submit.png" width = "200" alt="Submit" name= "btnimage" value ="Submit">
+	  
+	  </fieldset>
+	</form>
+</div>
+ <div class = "col-lg-5 col-xs-12">
+ 	<img src="images/order/almtorte.jpg" width = "400">
+ 	<img src="images/order/front.jpg" width ="400" >
+ 	<img src="images/order/display.jpg" width ="400" >
+ </div>
+</div>
+
+<br/><br/>
+  	
+<!-- FOOTER  ##################################################################################################### -->
+	<footer>
+		<hr/>
+		<p>Prantl's Bakery © 2018</p>
+		<div class = "icon_row"> 
+		    <a href="https://www.facebook.com/PrantlsBakery/" class = "icons" target="_blank">
+		    	<img src="images/icons/fb_icon.png">
+		    </a>
+		    <a href="https://www.instagram.com/prantls_bakery/" class = "icons" target="_blank">
+		    	<img src="images/icons/insta_icon.png">
+		    </a>
+		    <a href="https://twitter.com/prantlsbakery" class = "icons" target="_blank">
+		    	<img src="images/icons/tw_icon.png">
+		    </a>
+		    <a href="https://www.yelp.com/biz/prantls-bakery-pittsburgh" class = "icons" target="_blank">
+		    	<img src="images/icons/yelp_icon.png">
+		    </a>
+	    </div>
+	</footer>
+
+
+</div>	<!-- container ending -->
+</div> <!-- entire page ending -->
+</body>
+
+</html>

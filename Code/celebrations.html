@@ -1,0 +1,214 @@
+<!DOCTYPE html> 	<!-- Tells the browser this is HTML 5 -->
+<html lang="en"> 	<!-- Root of the html document and is in English -->
+<head> 
+	<!-- META tags help search engines identify your content more easily -->
+	<meta charset="utf-8" /> <!-- Specifies the character encoding for the HTML document -->
+	<meta name="author" content="Jessica Li">
+	<meta name="description" content="Prantl's Bakery">
+	<link href="https://fonts.googleapis.com/css?family=Cookie|Raleway|Great+Vibes|Poiret+One|Sacramento|Satisfy" rel="stylesheet">
+
+	<!-- The title will appear in the menu bar of the browser -->
+	<title>Prantl's Bakery</title>
+	
+	<!-- CSS External Links -->
+	<link rel="stylesheet" media="all" type="text/css" href="css/jquery-ui.css" />
+	<link rel="stylesheet" media="all" type="text/css" href="css/jquery.lightbox.css" />
+	<link rel="stylesheet" media="all" type="text/css" href="css/bootstrap.css" />
+    <link rel="stylesheet" media="all" type="text/css" href="css/styles.css" />
+    
+	<!-- JS External Links -->
+    <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="js/jquery-ui.js"></script>
+    <script type="text/javascript" src="js/jquery-lightbox.js"></script>
+	<script type="text/javascript" src="js/scripts.js"></script>
+
+<script>
+		$(function() {
+			$("#tabs").tabs({
+				event: "mouseover"
+			});
+		});
+</script>
+
+</head>
+    
+<body>
+<!-- The CONTAINER is where the main content goes -->
+<div id="container">
+  
+<!-- HEADER + NAVIGATION BAR (LOGO + BAR ON ONE LINE ) ################################################ -->
+  <div id="top_row">
+  <header id="head_all"> 
+  	<div class = "col-lg-3">
+  		<a href="index.html"> 
+  			<h1>Prantl's Bakery</h1>
+  			<!-- <img src="images/top_logo.png"> -->
+  		</a>
+  	</div>
+	<div class = "col-lg-9">
+		<nav class="navbar" >
+	    	<ul class=" nav page_titles">
+		        <li><a href="contact.html">Contact</a></li>
+		        <li><a href="order.html">Order</a></li>
+		        <li><a href="celebrations.html">Celebrations</a></li>
+		        <li><a href="index.html">Home</a></li>
+	  		</ul>
+		</nav>
+  	</div>
+    
+  </header>
+  </div>
+
+<!-- CELEBRATIONS ############################################################################################### -->
+
+  <div id= "tabs"> 
+  	<ul>
+  		<li><a href="#tabs-1">Weddings</a></li>
+		<li><a href="#tabs-2">Birthdays</a></li>
+		<li><a href="#tabs-3">Others</a></li>
+  	</ul>
+  	<div id = "tabs-1">  		
+  		<div class = "row">
+  			<div class = "col-lg-3">
+  				<img src="images/celebrations/wedding/wed1.png" width = "300" height = "300">
+  			</div>
+
+  			<div class = "col-lg-6">
+					<h1> Weddings </h1>
+					<h4> Weddings are such a joyous occasion and each one is different! The same is true of our wedding cakes. We have an almost unlimited combination of flavors and styles to choose from. </h4>
+			</div>
+			<div class = "col-lg-3">
+  				<img src="images/celebrations/wedding/wed2.jpg" width = "250" height = "300">
+  			</div>
+
+		</div>
+
+		<!-- </br> -->
+		<div class = "row">
+		<!-- TABLE-->
+		  <table>
+			  <tr>
+				  <th>Batters and fillings:</th>
+				  <th>Sizes:</th> 
+				  <th>Pricing:</th>
+				  <th>Other delicacies:</th>
+				  <th>Deliveries:</th>
+			  </tr>
+			  <tr>
+				<td>
+				  	<p>		
+						Our most popular batter is yellow, but we also offer red velvet, chocolate, marble, and others upon request. As for fillings, we recommend white buttercream icing, chocolate fudge icing, strawberry crème filling, vanilla pastry cream, or one of several fruit fillings (lemon, raspberry, apricot, strawberry, etc.). That being said, if you have something special in mind it can’t hurt to ask!
+					</p>
+				</td>
+				
+				<td>
+				  	<p>		
+						To keep proportionality and maintain structure, wedding cakes come in certain sizes with certain tier dimensions. If the size of the wedding party falls in between cake sizes, we can offer additional sheet cakes up to the amount of slices required.
+					</p>
+				</td>
+				
+				<td>
+				  	<p>		
+						Our wedding cakes vary in price, depending on type, size, and “extras” such as special fillings, pillars, etc. For example, the cakes seen above are in the $3.25 – $3.75 per serving range.
+					</p>
+				</td>
+				
+				<td>
+				  	<p>		
+						Our wedding cakes are really just the beginning. Lots of folks opt for Individual desserts (3” mini-cakes, cupcakes, etc.) and of course there’s always room in the celebration for Cookie Trays, Monogrammed Petit Fours, Junior Pastry Trays, Grooms’ Cakes, Shower Cakes, Monogrammed Cookies, Wedding Challah, Breakfast Trays, etc.
+					</p>
+				</td>
+				
+				<td>
+				  	<p>		
+						We co-ordinate with the reception venue, florist, etc. for the timing of the delivery of the cake. Delivery fees vary by location. Smaller cakes can be packed by us to facilitate pick-up at the bakery.
+					</p>
+				</td>
+		  </table> 
+	  </div>
+	</div> <!-- Weddings Tab End-->
+
+  	<div id = "tabs-2">
+  		<h1>Celebrations</h1>
+  		<h4>
+  			Birthdays, anniversaries, showers, graduations, religious celebrations etc. We have baked special treats for each of life’s special events and can customize them to showcase your theme or ideas. View our photo gallery on Facebook, and if you would like to inquire about a custom cake not available on our website, please email us at info@prantlsbakery.com.  
+  		</h4>
+  		
+  		<div class = "row" id = "cel_treats">
+			<div class = "col-lg-3 col-xs-12"><img src="images/celebrations/birthday/bd1.jpg" width="300" height="187.5"></div>
+			<div class = "col-lg-3 col-xs-12"><img src="images/celebrations/birthday/bd2.jpg" width="300" height="187.5"></div>
+			<div class = "col-lg-3 col-xs-12"><img src="images/celebrations/birthday/bd3.jpg" width="300" height="187.5"></div>
+			<div class = "col-lg-3 col-xs-12"><img src="images/celebrations/birthday/bd4.jpg" width="300" height="187.5"></div>
+			
+		</div>
+
+  		<table>
+			<tr>
+				  <th>Sizes:</th> 
+				  <th>Pricing:</th>
+				  <th>Delivery:</th>
+			</tr>
+			<tr>
+				<td>
+				  	<p>		
+						We offer custom cake rounds sizes from 8”-12”. Sheet cakes can be ordered from the sizes of 1/4, 1/2, 3/4 and full. 
+					</p>
+				</td>
+				
+				<td>
+				  	<p>		
+						Our cakes vary in price, depending on type, size, and “extras” such as decorations and personalizations. 
+					</p>
+				</td>
+				
+				<td>
+				  	<p>		
+						Delivery fees vary by location. Smaller cakes can be packed by us to facilitate pick-up at the bakery.
+					</p>
+				</td>
+			</tr>
+		</table>
+  	</div>
+
+  	<div id = "tabs-3">
+  		<h1>Holidays</h1>
+  		<h4>	From Valentine’s Day, Christmas, Thanksgiving, and Mardi Gras, we have cakes for your favorite occasions! 
+			Easter is right around the corner. Check out our baked goods that are perfect for your fun, colorful weekend, ranging from Easter themed cookies, cakes, cupcakes, and more.</h4>
+
+  		<div class = "row">
+			<div class = "col-lg-4 col-xs-12"><img src="images/celebrations/general/gen1.jpg" width="300" height="auto"></div>
+			<div class = "col-lg-4 col-xs-12"><img src="images/celebrations/general/gen2.jpg" width="300" height="auto"></div>
+			<div class = "col-lg-4 col-xs-12"><img src="images/celebrations/general/gen3.jpg" width="300" height="auto"></div>
+			
+		</div>
+
+  	</div>
+  </div>
+  
+  	
+<!-- FOOTER  ##################################################################################################### -->
+	<footer>
+		<hr/>
+		<p>Prantl's Bakery © 2018</p>
+		<div class = "icon_row"> 
+		    <a href="https://www.facebook.com/PrantlsBakery/" class = "icons" target="_blank">
+		    	<img src="images/icons/fb_icon.png">
+		    </a>
+		    <a href="https://www.instagram.com/prantls_bakery/" class = "icons" target="_blank">
+		    	<img src="images/icons/insta_icon.png">
+		    </a>
+		    <a href="https://twitter.com/prantlsbakery?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" class = "icons" target="_blank">
+		    	<img src="images/icons/tw_icon.png">
+		    </a>
+		    <a href="https://www.yelp.com/biz/prantls-bakery-pittsburgh" class = "icons" target="_blank">
+		    	<img src="images/icons/yelp_icon.png">
+		    </a>
+	    </div>
+	</footer>
+
+
+</div>	<!-- container ending -->
+</div> <!-- entire page ending -->
+</body>
+
+</html>
