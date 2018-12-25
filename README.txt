@@ -1,8 +1,8 @@
 
 
-Prantl's Bakery Possible Website
+## Prantl's Bakery Website
 
-
+- Use of jQuery can be found within the JS folder as well as Bootstrap in lines below
 - Please use the Bootstrap file provided in this folder (if you choose to do the Bootstrap form for your Additional Feature, create a new css file just for those components)
 - Push and pull have been removed from this version of bootstrap.css
 
